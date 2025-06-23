@@ -1,0 +1,21 @@
+fas
+exercise,feedback,muscle_group,nutrition,progress,user,workout,workout_exercise
+
+Exercise
+	ExerciseID 	ExerciseName 	MuscleGroupID 	ExerciseDesc 	Video_url  muscle_worked
+Feedback
+	FeedbackID 	UserID 	Date 	FeedbackText
+muscle_group
+	MuscleGroupID 	MuscleGroupName
+nutrition
+	NutritionID 	UserID 	FoodItem 	Calories 	Recommendation 	Image 	FoodDesc Date
+progress
+	ProgressID 	UserID 	WorkoutID 	Date 	Sets 	Reps  Weight TimeTaken MuscleGroupID FocusLevel  calories_consumed
+user
+	UserID 	        UserName Password 	Email 	Height 	Weight 	Age 	Gender 	BMI 	Daily_caloric_goal   fitness_goal   created_at   
+workout
+	WorkoutID 	WorkoutName 	UserID 	DateCreated 	
+workout_exercise
+	WorkoutExerciseID 	WorkoutID 	ExerciseID 	
+progress_muscle
+		ProgressMuscleID   ProgressID MuscleGroupID   FocusLevel

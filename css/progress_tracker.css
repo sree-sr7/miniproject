@@ -1,0 +1,57 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.progress-card {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.dark-mode .progress-card {
+    background-color: #444;
+    color: #fff;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+.dark-mode .navbar .nav-link {
+    color: #e9ecef;
+}
+
+.dark-mode .navbar .navbar-brand {
+    color: #fff;
+}
+
+#progressCategoriesList .nav-link {
+    color: #495057;
+}
+
+.dark-mode #progressCategoriesList .nav-link {
+    color: #e9ecef;
+}
+
+#progressCategoriesList .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.dark-mode #progressCategoriesList .nav-link.active {
+    background-color: #0056b3;
+}

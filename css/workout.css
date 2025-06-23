@@ -1,0 +1,47 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.body-part-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.exercise-item.selected {
+    background-color: #e8f5e9;
+}
+
+.dark-mode .exercise-item.selected {
+    background-color: #1b5e20;
+}
+
+.card {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .card-header {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .list-group-item {
+    background-color: #444;
+    color: #fff;
+}
+
+.saved-workout {
+    cursor: pointer;
+}
+
+.saved-workout:hover {
+    background-color: #f8f9fa;
+}
+
+.dark-mode .saved-workout:hover {
+    background-color: #555;
+}

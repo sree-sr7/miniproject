@@ -1,0 +1,112 @@
+:root {
+    --light-bg: #f8f9fa;
+    --light-card-bg: #ffffff;
+    --light-text: #333333;
+    --dark-bg: #121212;
+    --dark-card-bg: #1E1E1E;
+    --dark-text: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #1E1E1E;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link,
+.dark-mode .navbar-toggler-icon {
+    color: var(--dark-text);
+}
+
+.hero {
+    transition: background 0.3s;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.light-mode .hero {
+    background: linear-gradient(135deg, #4a90e2 0%, #4CAF50 100%);
+    color: white;
+}
+
+.dark-mode .hero {
+    background: #2C2C2C;
+    color: #4CAF50;
+}
+
+.card {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.light-mode .card {
+    background-color: var(--light-card-bg);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dark-mode .card {
+    background-color: var(--dark-card-bg);
+    box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+}
+
+.card-header {
+    transition: background-color 0.3s;
+}
+
+.light-mode .card-header {
+    background-color: #e9ecef;
+}
+
+.dark-mode .card-header {
+    background-color: #2C2C2C;
+}
+
+.form-control, .form-select {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .form-control, .dark-mode .form-select {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode .form-control:focus, .dark-mode .form-select:focus {
+    background-color: #444;
+    color: #fff;
+}
+
+.mode-switch {
+    cursor: pointer;
+}
+
+.dark-mode .btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}

@@ -1,0 +1,117 @@
+/* exercise.css */
+:root {
+    --dark-bg: #121212;
+    --dark-card: #1E1E1E;
+    --dark-text: #FFFFFF;
+    --light-bg: #FFFFFF;
+    --light-card: #F8F9FA;
+    --light-text: #212529;
+    --transition-speed: 0.3s;
+}
+
+body {
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    min-height: 100vh;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.navbar {
+    transition: background-color var(--transition-speed), border-color var(--transition-speed);
+}
+
+.dark-mode .navbar {
+    background-color: var(--dark-card) !important;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+.exercise-card {
+    transition: background-color var(--transition-speed), border-color var(--transition-speed), box-shadow var(--transition-speed);
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.dark-mode .exercise-card {
+    background-color: var(--dark-card);
+    border-color: #2D2D2D;
+    color: var(--dark-text);
+}
+
+.dark-mode .card {
+    background-color: var(--dark-card);
+    border-color: #2D2D2D;
+}
+
+#bodyPartsList .nav-link {
+    color: var(--light-text);
+    transition: color var(--transition-speed), background-color var(--transition-speed);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.dark-mode #bodyPartsList .nav-link {
+    color: var(--dark-text);
+}
+
+#bodyPartsList .nav-link:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.dark-mode #bodyPartsList .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#bodyPartsList .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.dark-mode #bodyPartsList .nav-link.active {
+    background-color: #0056b3;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.dark-mode .form-check-label {
+    color: var(--dark-text);
+}
+
+.video-player {
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Fix for dark mode switch contrast */
+.dark-mode .form-switch .form-check-input {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.dark-mode .form-switch .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Improve card content readability in dark mode */
+.dark-mode .card-text {
+    color: #E1E1E1;
+}
+
+.dark-mode .card-title {
+    color: #FFFFFF;
+}
+
+/* Better focus states for accessibility */
+.nav-link:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    outline: none;
+}
+
+.dark-mode .nav-link:focus, .dark-mode .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}

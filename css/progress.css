@@ -1,0 +1,131 @@
+/* progress.css */
+:root {
+    --light-bg: #ffffff;
+    --light-text: #212529;
+    --light-border: #dee2e6;
+    --light-input-bg: #ffffff;
+    --light-card-bg: #ffffff;
+    --dark-bg: #222222;
+    --dark-text: #ffffff;  /* Pure white text for maximum contrast */
+    --dark-border: #444444;
+    --dark-input-bg: #333333;
+    --dark-card-bg: #2d2d2d;
+    --transition-speed: 0.3s;
+}
+
+/* Base styles */
+body {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Card specific dark mode styles */
+.dark-mode .card {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
+}
+
+.dark-mode .card * {
+    color: var(--dark-text) !important;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-body,
+.dark-mode .card-text,
+.dark-mode .form-label,
+.dark-mode label,
+.dark-mode .list-group-item,
+.dark-mode .table {
+    color: var(--dark-text) !important;
+}
+
+/* Form control dark mode styles */
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: var(--dark-input-bg);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.dark-mode .form-control:focus,
+.dark-mode .form-select:focus {
+    background-color: var(--dark-input-bg);
+    border-color: #0d6efd;
+    color: var(--dark-text);
+}
+
+/* Table dark mode styles */
+.dark-mode .table {
+    color: var(--dark-text);
+}
+
+.dark-mode .table td,
+.dark-mode .table th {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
+    color: var(--dark-text) !important;
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* List group dark mode styles */
+.dark-mode .list-group-item {
+    background-color: var(--dark-card-bg);
+    border-color: var(--dark-border);
+}
+
+/* Muscle groups select dark mode styles */
+.dark-mode #muscle_groups option {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+}
+
+/* Form text dark mode styles */
+.dark-mode .form-text {
+    color: #cccccc !important;
+}
+
+/* Navbar dark mode styles */
+.dark-mode .navbar {
+    background-color: var(--dark-bg) !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: var(--dark-text) !important;
+}
+
+/* Badge dark mode styles */
+.dark-mode .badge {
+    background-color: #0d6efd !important;
+    color: var(--dark-text) !important;
+}
+
+/* Additional specific fixes */
+.dark-mode .card .list-group-item {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text) !important;
+}
+
+.dark-mode .list-group-item .badge {
+    color: var(--dark-text) !important;
+}
+
+/* Progress card specific styles */
+.dark-mode .progress-card {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text) !important;
+}
+
+.dark-mode .progress-card .card-body {
+    color: var(--dark-text) !important;
+}
